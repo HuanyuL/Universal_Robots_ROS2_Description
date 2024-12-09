@@ -327,7 +327,7 @@
     <!-- base_joint fixes base_link to the environment -->
     <joint name="${tf_prefix}base_joint" type="fixed">
       <xacro:insert_block name="origin" />
-      <parent link="${parent}" />
+      <parent link="top_plate_default_mount" />
       <child link="${tf_prefix}base_link" />
     </joint>
 
